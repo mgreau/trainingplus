@@ -1,12 +1,9 @@
-package models;
+package com.trainingplus.model;
 
 import java.util.Date;
 
 import javax.persistence.Entity;
-
-import play.data.validation.Email;
-import play.data.validation.Required;
-import play.db.jpa.Model;
+import javax.persistence.Id;
 
 /**
  * Une personne dans le système de gestion de club.
@@ -15,22 +12,20 @@ import play.db.jpa.Model;
  *
  */
 @Entity
-public class Person extends Model {
+public class Person {
+	
+	@Id Long id;
 	
 	/** Nom de famille de la personne */
-	@Required
 	public String name;
 	
 	/** Prénom de la personne */
-	@Required
 	public String firstName;
 	
 	/** Date de naissance de la personne */
-	@Required
 	public Date birthday;
 	
 	/** Adresse email de la personne */
-    @Email
     public String email;
 
 	public Person(String name, String firstName, Date birthday, String email) {

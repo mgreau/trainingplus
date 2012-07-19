@@ -6,7 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
-import models.Person;
 
 /**
  * Un joueur.

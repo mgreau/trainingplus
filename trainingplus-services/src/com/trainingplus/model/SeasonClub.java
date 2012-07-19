@@ -1,10 +1,8 @@
 package com.trainingplus.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
-import play.db.jpa.Model;
 
 /**
  * La saison sportive d'un club.
@@ -13,7 +11,7 @@ import play.db.jpa.Model;
  *
  */
 @Entity
-public class SeasonClub extends Model{
+public class SeasonClub {
 	
 	/** Le club */
 	@ManyToOne

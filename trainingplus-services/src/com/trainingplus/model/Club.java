@@ -2,9 +2,6 @@ package com.trainingplus.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-import play.data.validation.Required;
-import play.db.jpa.Model;
-
 /**
  * Un club de sport.
  * 
@@ -12,10 +9,9 @@ import play.db.jpa.Model;
  * 
  */
 @Entity
-public class Club extends Model {
+public class Club  {
 
 	/** Nom du club */
-	@Required
 	@Column(nullable = false)
 	public String name;
 

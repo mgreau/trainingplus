@@ -7,8 +7,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 
-import play.data.validation.Required;
-import play.db.jpa.Model;
 
 /**
  * Une catégorie de joueur de sport.
@@ -17,14 +15,13 @@ import play.db.jpa.Model;
  * Par exemple : Séniors, Jeunes, U15, U17, Vétérans, Poussins
  * </p>
  * 
- * @author Maxime Gréau <maxime.greau@fiaveo.fr>
+ * @author Maxime Gr�au <dev@mgreau.com>
  * 
  */
 @Entity
-public class Category extends Model {
+public class Category {
 
 	/** Libellé de la catégorie */
-	@Required
 	@Column(nullable = false)
 	public String title;
 
@@ -43,13 +40,8 @@ public class Category extends Model {
 	 * overrides Model delete method
 	 */
 	public Category delete() {
-		// As dependOn is the owner side
-		for (Category cat : dependants) {
-			cat.dependOn.remove(this);
-			cat.save();
-		}
-
-		return super.delete();
+		
+		return null;
 	}
 
 	/**

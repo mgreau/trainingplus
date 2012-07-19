@@ -6,8 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
-import models.Person;
-import play.data.validation.Email;
 
 /**
  * Un entraineur sportif.

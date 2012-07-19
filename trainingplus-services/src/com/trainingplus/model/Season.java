@@ -6,8 +6,6 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-import play.data.validation.Required;
-import play.db.jpa.Model;
 
 /**
  * Une saison sportive.
@@ -16,15 +14,13 @@ import play.db.jpa.Model;
  *
  */
 @Entity
-public class Season extends Model {
+public class Season {
 	
 	/** Date de début de la saison */
-	@Required
 	@Column(nullable = false)
 	public Date startDate;
 	
 	/** Date de fin de la saison */
-	@Required
 	@Column(nullable = false)
 	public Date endDate;
 

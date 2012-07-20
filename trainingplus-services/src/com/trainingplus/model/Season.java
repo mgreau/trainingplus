@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 /**
  * Une saison sportive.
  * 
- * @author Maxime Gréau <maxime.greau@fiaveo.fr>
+ * @author Maxime Gréau <dev@mgreau.com>
  *
  */
 @Entity

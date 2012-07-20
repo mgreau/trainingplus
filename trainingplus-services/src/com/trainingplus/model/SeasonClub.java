@@ -7,7 +7,7 @@ import javax.persistence.ManyToOne;
 /**
  * La saison sportive d'un club.
  * 
- * @author Maxime Gréau <maxime.greau@fiaveo.fr>
+ * @author Maxime Gréau <dev@mgreau.com>
  *
  */
 @Entity

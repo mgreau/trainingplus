@@ -10,7 +10,7 @@ import javax.persistence.InheritanceType;
 /**
  * Un joueur.
  * 
- * @author Maxime Gréau <maxime.greau@fiaveo.fr>
+ * @author Maxime Gréau <dev@mgreau.com>
  *
  */
 @Entity

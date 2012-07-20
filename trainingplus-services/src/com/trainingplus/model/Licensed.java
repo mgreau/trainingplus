@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 /**
  * Les inscrits au club pour une saison sportive.
  * 
- * @author Maxime Gréau <maxime.greau@fiaveo.fr>
+ * @author Maxime Gréau <dev@mgreau.com>
  * 
  */
 @Entity

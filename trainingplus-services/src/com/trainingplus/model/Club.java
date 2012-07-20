@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 /**
  * Un club de sport.
  * 
- * @author Maxime Gréau <maxime.greau@fiaveo.fr>
+ * @author Maxime Gréau <dev@mgreau.com>
  * 
  */
 @Entity

@@ -8,7 +8,7 @@ import javax.persistence.Id;
 /**
  * Une personne dans le système de gestion de club.
  * 
- * @author Maxime Gréau <maxime.greau@fiaveo.fr>
+ * @author Maxime Gréau <dev@mgreau.com>
  *
  */
 @Entity

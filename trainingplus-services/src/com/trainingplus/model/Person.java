@@ -5,13 +5,14 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import com.googlecode.objectify.annotation.Unindexed;
+
 /**
  * Une personne dans le système de gestion de club.
  * 
  * @author Maxime Gréau <dev@mgreau.com>
  *
  */
-@Entity
 public class Person {
 	
 	@Id Long id;
@@ -23,6 +24,7 @@ public class Person {
 	public String firstName;
 	
 	/** Date de naissance de la personne */
+	@Unindexed
 	public Date birthday;
 	
 	/** Adresse email de la personne */

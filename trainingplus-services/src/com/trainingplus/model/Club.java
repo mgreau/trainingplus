@@ -1,5 +1,6 @@
 package com.trainingplus.model;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
 import com.google.appengine.labs.repackaged.com.google.common.base.Objects;
@@ -10,6 +11,7 @@ import com.google.appengine.labs.repackaged.com.google.common.base.Objects;
  * @author mgreau
  * 
  */
+@Entity
 public class Club {
 
 	@Id
@@ -47,6 +49,14 @@ public class Club {
 	@Override
 	public int hashCode(){
 		return Objects.hashCode(this.name);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

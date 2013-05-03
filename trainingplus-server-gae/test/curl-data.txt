@@ -1,0 +1,2 @@
+curl -H 'Content-Type: application/json' -d '{"name": "real"}' http://localhost:8888/_ah/api/trainingplus/v1/club
+curl -H 'Content-Type: application/json' -d '{"name":"GREAU","email":"ewenn@gmail.com","firstName":"ewenn"}' http://localhost:8888/_ah/api/trainingplus/v1/player
